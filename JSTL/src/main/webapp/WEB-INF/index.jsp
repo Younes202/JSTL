@@ -14,6 +14,10 @@ Name is :  <c:out value="${aut.name}"/> </p>
 <p> Phone is <c:out value="${aut.phone }"/></p>
 
 <p> Age is <c:out value="${aut.age }"/></p>
+<p> <c:if test="${50<10}"/>
+  That's right !
+  </c:if>
+  </p>
 
 
 
