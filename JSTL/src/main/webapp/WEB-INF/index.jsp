@@ -30,7 +30,14 @@ Name is :  <c:out value="${aut.name}"/> </p>
 
     </p>
 
+<c:forEach items="${title }" var="title" varStatus="status">
+<c:out value="${status.count }"/>
+<c:out value="${title }"/>
+ <br>
 
+</c:forEach>
+<c:forTokens var="morceau" items="title/of/younes" delims="/">
+<p> ${morceau}</p>
 
 
 
