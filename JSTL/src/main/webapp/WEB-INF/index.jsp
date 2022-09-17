@@ -24,6 +24,9 @@ Name is :  <c:out value="${aut.name}"/> </p>
 
 <c:when test="${variable > 20}">More than 20 </c:when>
 </c:choose>
+<c:forEach var ="i" begin="0" end="10" step="1">
+<p> Message N:  <c:out value="${i }"/> </p>
+</c:forEach>
 
     </p>
 
