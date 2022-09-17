@@ -14,10 +14,18 @@ Name is :  <c:out value="${aut.name}"/> </p>
 <p> Phone is <c:out value="${aut.phone }"/></p>
 
 <p> Age is <c:out value="${aut.age }"/></p>
-<p> <c:if test="${50<10}"/>
+<p> <c:if test="${50>10}">
   That's right !
   </c:if>
-  </p>
+  <c:set var="variable" value="20"/>
+<c:choose>
+<c:when test="${variable < 20 }">Value small of 20  </c:when>
+<c:when test="${variable == 20 }"> Value equal 20 </c:when>
+
+<c:when test="${variable > 20}">More than 20 </c:when>
+</c:choose>
+
+    </p>
 
 
 
